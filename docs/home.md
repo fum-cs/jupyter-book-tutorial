@@ -16,7 +16,6 @@ For more advanced usage of Jupyter Book (e.g., using this special content block,
 :::
 
 ## Prerequisites
-<a name="pre"></a>
 
 Please make sure you have all the prerequisites ready before continuing this tutorial.
 
@@ -56,7 +55,6 @@ If you are new to this idea, check [the git guide](https://github.com/git-guides
 Also, here is [a 15-minute Git tutorial video](https://www.youtube.com/watch?v=USjZcfj8yxE) that covers what you need for this course.
 
 ## Step 1: Install conda
-<a name="s1"></a>
 
 The first step is installing the conda virtual environment using [miniconda](https://docs.conda.io/en/main/miniconda.html) or [anaconda](https://www.anaconda.com/).
 Pick either one of them and follow the instructions on the website to install conda so that you can use the `conda` command on your terminal.
@@ -87,7 +85,6 @@ Otherwise, your terminal will not be able to find the conda command.
 :::
 
 ## Step 2: Install Jupyter Book
-<a name="s2"></a>
 
 In this step, you will install the Jupyter Book package.
 Notice that there are two sections in this step.
