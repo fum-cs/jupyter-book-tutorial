@@ -4,5 +4,7 @@
 format: jb-book
 root: docs/home
 chapters:
-- file: docs/notebook
+- file: docs/quickstart-local
+- file: docs/example-notebook
 - file: docs/persian-text
+- file: docs/quickstart-github
