@@ -59,14 +59,14 @@
 ### نمونه درس‌ها
 
 - [یادگیری عمیق با Just-the-docs](https://fum-cs.github.io/dl-fall-2023/)
-- [Modern ++C با Just-the-docs](https://fum-cs.github.io/modern-cpp/)
+- [Modern C++ با Just-the-docs](https://fum-cs.github.io/modern-cpp/)
 - [شبکه‌های عصبی با Jupyter Book](https://fum-cs.github.io/neural-networks/)
 
 ---
 
 ## منابع بیشتر
 
-برای مطالعه بیشتر و آشنایی با نحوه ساخت سایت شخصی با سایت‌سازهای استاتیک، به مقاله زیر مراجعه کنید:  
+برای مطالعه بیشتر و آشنایی با نحوه ساخت سایت شخصی با سایت‌سازهای استاتیک، به سایت زیر مراجعه کنید:  
 [چگونه سایت شخصی خود را بسازیم؟ (قسمت اول)](https://aprd.ir/create-your-own-website-part1/)
 
 </div>

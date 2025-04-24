@@ -20,7 +20,7 @@ This guide explains how to publish your Jupyter Book online using GitHub Pages.
 
 ## 4. Copy Book Files
 
-- Copy all files and folders (including `_build/html`) from your Jupyter Book project into the cloned repository folder.
+- Copy all files and folders (including `_build/html`) from [this Jupyter Book project](https://github.com/fum-cs/jupyter-book-tutorial) into the cloned repository folder.
 
 ## 5. Commit and Push Changes
 
