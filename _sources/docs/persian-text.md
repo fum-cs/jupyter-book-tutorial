@@ -92,19 +92,21 @@ $$ E=mc^2 $$
 
 ---
 
-**مجموعه داستان‌های اونلی:**
+**سریال قصه‌های جزیره**
 
-داستانهای زیر و برخی از دیگر داستان‌های خانم مونتگمری الهام بخش سریال قصه‌های جزیره بوده‌اند:
+داستانهای زیر و برخی از دیگر داستان‌های خانم مونتگمری الهام بخش سریال قصه‌های جزیره (Road to Avonlea) بوده‌اند:
 
+- «دختر قصه‌گو» (The Story Girl) - ۱۹۱۱
 - «ماجراهای اونلی» (Chronicles of Avonlea) - ۱۹۱۲
-- «ماجراهای بیشتر اونلی» (Further Chronicles of Avonlea) - ۱۹۲۰
 
 ![](images/road-to-avonlea.jpg)
 
-## Related sites
-
-- [L.M. Montgomery Online](https://lmmonline.org/)
-- [L. M. Montgomery Institute, University of Prince Edward Island](https://lmmontgomery.ca/)
-- [Journal of L.M. Montgomery Studies](https://journaloflmmontgomerystudies.ca/)
 
 </div>
+
+## Related sites
+
+- [L. M. Montgomery Institute, University of Prince Edward Island](https://lmmontgomery.ca/)
+- [Journal of L.M. Montgomery Studies](https://journaloflmmontgomerystudies.ca/)
+- [L.M. Montgomery Online](https://lmmonline.org/)
+- [Books by Montgomery](https://www.gutenberg.org/ebooks/author/36), Project Gutenberg
