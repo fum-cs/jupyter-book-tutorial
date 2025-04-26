@@ -11,6 +11,10 @@ copyright: "2025. CC0 Licensed - Computer Science Dept., Ferdowsi University of 
 execute:
   execute_notebooks: force
 
+# Exclude the following files from the book build
+exclude_patterns:
+  - README.md  # Exclude the README file from the book build
+
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:

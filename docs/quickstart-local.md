@@ -38,5 +38,3 @@ This guide helps you run Jupyter Book locally on Windows in a few simple steps.
   jupyter-book build ./
   ```
 - Open the generated file `_build/html/index.html` in your browser to view the book.
-
----
