@@ -53,6 +53,8 @@ This guide explains how to publish your Jupyter Book online using GitHub Pages.
 - Click **Settings > Pages**.
 - Your site will be available at the URL shown there (usually `https://<username>.github.io/<repository>/`).
 
+![](images/github-pages.png)
+
 ## 9. Update Your Book After Changes
 
 - If you make any changes to your book content:
