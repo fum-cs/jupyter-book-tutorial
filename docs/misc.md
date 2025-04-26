@@ -1,49 +1,84 @@
-# File Conversion to Markdown
 
-When building your Jupyter Book, you may want to incorporate existing content from other formats. Here are reliable methods to convert common file types to Markdown:
+# Useful Tips and Advanced Features for Jupyter Book
 
-## 1. **LaTeX to Markdown**
-- **Pandoc**:  
+## About `_config.yml`
+
+The `_config.yml` file is the main configuration file for your Jupyter Book.  
+You can use it to set the book title, author, LaTeX output filename, theme options, language, and many other settings.  
+For more details, see the [Jupyter Book configuration documentation](https://jupyterbook.org/en/stable/customize/config.html).
+
+## How to Add Citations in Jupyter Book
+
+To cite references in Jupyter Book, use a bibliography file (e.g., `references.bib`) and the `cite` syntax.
+
+1. Add your reference to a `.bib` file (for example, `references.bib`):
+
+    ```bibtex
+    @article{Lemos2023,
+      author    = {Lemos, Pablo and Jeffrey, Niall and Cranmer, Miles and Ho, Shirley and Battaglia, Peter},
+      title     = {Rediscovering orbital mechanics with machine learning},
+      journal   = {Machine Learning: Science and Technology},
+      year      = {2023},
+      month     = {oct},
+      publisher = {IOP Publishing},
+      volume    = {4},
+      number    = {4},
+      pages     = {045002}
+    }
+    ```
+
+2. In your Markdown file, cite the reference like this:  
+    `{cite}` syntax:
+    ```markdown
+    This is an example citation {cite}`Lemos2023`.
+    ```
+
+3. In your `_config.yml`, add:
+    ```yaml
+    bibtex_bibfiles:
+      - references.bib
+    ```
+4. To display the bibliography in any file, add the following section where you want the references to appear:
+    ````markdown
+    ## References
+
+    ```{bibliography}
+    ```
+    ````
+Lemos et al. (2023) present a novel approach for discovering the laws of orbital mechanics using machine learning techniques. Their work demonstrates how AI can rediscover fundamental physical principles from data {cite}`Lemos2023`.
+
+
+**For more details, see the [Jupyter Book citation guide](https://jupyterbook.org/en/stable/content/citations.html).**
+
+## Export to LaTeX Book (PDF)
+
+- You can convert your educational content to a LaTeX book (and then PDF) using:
   ```bash
-  pandoc input.tex -o output.md --mathjax
+  jupyter-book build --builder pdflatex ./
   ```
-  - Preserves equations (converts to MathJax)
-  - Handles citations and cross-references
+- The output `.tex` file name is set in your `_config.yml` file.
+- Note: The generated LaTeX file often needs manual error fixing and should be compiled with **XeLaTeX** for best results, especially for non-English content.
 
-- **Online/Desktop Tool**:  
-  - [Markdown Converters](https://markdownconverters.com/docs) (Supports LaTeX → Markdown with equation handling)
+## File Conversion to Markdown
 
-## 2. **PowerPoint to Markdown**
-- **Export as Text**:  
-  1. Save PPT as `.txt` (File → Save As → Plain Text)  
-  2. Clean up and add Markdown syntax (headers, lists)
+When building your Jupyter Book, you may want to incorporate existing content from other formats. Here are three simple and effective ways to convert files to Markdown:
 
-- **Automated Tools**:  
-  - [PPT-to-Markdown](https://github.com/matthuisman/ppt-to-markdown) (Python script)  
-  - [Markdown Converters](https://markdownconverters.com/docs) (Handles PPT/PPTX → MD)
+1. AI Tools (ChatGPT & LLMs)
+- Paste your content (text, tables, code, etc.) into ChatGPT or similar language models and ask for Markdown conversion.
+- Great for quick, small conversions and cleaning up formatting.
 
-## 3. **PDF to Markdown**
-- **Pandoc** (Best for text-heavy PDFs):  
+2. Online Tools
+- Use online tools such as [Markdown Converters](https://markdownconverters.com/docs) for drag-and-drop conversion from PDF, Word, PPT, LaTeX, and more.
+- Supports equations, tables, and images.
+
+3. Pandoc (Universal Converter)
+- Use Pandoc for powerful, scriptable conversion of most formats (LaTeX, Word, PDF, PowerPoint, HTML) to Markdown:
   ```bash
-  pandoc input.pdf -o output.md --pdf-engine=xelatex
+  pandoc input.file -o output.md
   ```
 
-- **OCR-Based Tools**:  
-  - [Mathpix](https://mathpix.com) (Extracts text + equations)  
-  - [Markdown Converters](https://markdownconverters.com/docs) (PDF → MD with formatting)
+## More Resources: Installing and Using Jupyter Book
 
-## 4. **Word to Markdown**
-- **Built-in Export**:  
-  Word (2016+) → File → Export → Markdown (.md)
-
-- **All-in-One Solution**:  
-  - [Markdown Converters](https://markdownconverters.com/docs) (DOCX → MD with table/image support)
-
-## Key Features of [Markdown Converters](https://markdownconverters.com/docs):
-- **Multi-Format Support**: LaTeX, PDF, PPT, Word, HTML → Markdown  
-- **Desktop App**: Available for Windows/macOS (Offline conversion)  
-- **Math Support**: Preserves LaTeX equations during conversion  
-
----
-
-**Note**: For batch processing or complex documents, combine these tools with scripting (e.g., Pandoc + Python). Always validate converted Markdown in your Jupyter Book preview!  
+- [Jupyter Book Official Site – Installation & Usage Guide](https://jupyterbook.org/en/stable/start/overview.html)
+- [Jupyter Book Tutorial by pabloinsente (GitHub)](https://github.com/pabloinsente/jupyter-book-tutorial)
+- [Jupyter Book Template & Example by yenchiah](https://yenchiah.me/jupyter-book-template/docs/home.html)
