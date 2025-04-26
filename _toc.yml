@@ -8,4 +8,5 @@ chapters:
 - file: docs/example-notebook
 - file: docs/persian-text
 - file: docs/quickstart-github
+- file: docs/misc
 - file: docs/Jupyter-Book-Tutorial
