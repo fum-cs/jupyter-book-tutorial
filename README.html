@@ -177,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="docs/home.html">
-                    سایت‌سازهای استاتیک چیستند؟ (صفحه اصلی)
+                    سایت‌سازهای استاتیک
                 </a>
             </li>
         </ul>
@@ -186,8 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="docs/example-notebook.html">Example Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/persian-text.html">راهنمای نوشتن متن فارسی و راست‌به‌چپ در ژوپیتربوک</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/quickstart-github.html">Publishing Jupyter Book on GitHub Pages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs/Jupyter-Book-Tutorial.html">Jupyter Book Tutorial</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="docs/misc.html">Useful Tips and Advanced Features for Jupyter Book</a></li>
 </ul>
 
     </div>
@@ -383,7 +382,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">What is Jupyter Book?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build">Build</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn More</a></li>
 </ul>
             </nav>
         </div>
@@ -397,15 +399,44 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book-tutorial">
 <h1>jupyter-book-tutorial<a class="headerlink" href="#jupyter-book-tutorial" title="Link to this heading">#</a></h1>
-<p>This repository hosts the tutorial and template code for building a basic Jupyter Book website.</p>
+<p>This repository provides a step-by-step tutorial and template for building a basic Jupyter Book website, with a focus on practical examples and multilingual support (English and Persian).</p>
+<section id="what-is-jupyter-book">
+<h2>What is Jupyter Book?<a class="headerlink" href="#what-is-jupyter-book" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a> is an open-source tool for building publication-quality books, documentation, and websites from Markdown, Jupyter Notebooks, and other content.</p>
+</section>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Quickstart Guides:</strong><br />
+Step-by-step instructions for local setup, building, and publishing your Jupyter Book.</p></li>
+<li><p><strong>Persian Language Support:</strong><br />
+Tips and examples for writing right-to-left (RTL) content and working with Persian text.</p></li>
+<li><p><strong>Static Site Generators Overview:</strong><br />
+Introduction to static site generators, with examples and comparisons.</p></li>
+<li><p><strong>Advanced Features:</strong><br />
+How to add citations, export to LaTeX/PDF, and convert content from other formats to Markdown.</p></li>
+<li><p><strong>Sample Notebooks and Markdown Files:</strong><br />
+Ready-to-use examples for your own projects.</p></li>
+</ul>
+</section>
 <section id="build">
 <h2>Build<a class="headerlink" href="#build" title="Link to this heading">#</a></h2>
-<p>In notebooks folder:</p>
+<p>In the root folder, you can build and publish your book with the following commands:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>./
+ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>./_build/html
+jupyter-book<span class="w"> </span>build<span class="w"> </span>--builder<span class="w"> </span>pdflatex<span class="w"> </span>./
+</pre></div>
+</div>
+</section>
+<section id="learn-more">
+<h2>Learn More<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>jupyter-book build ./</p></li>
-<li><p>ghp-import -n -p -f ./_build/html</p></li>
-<li><p>jupyter-book build –builder pdflatex ./</p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/start/overview.html">Jupyter Book Official Documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pabloinsente/jupyter-book-tutorial">Jupyter Book Tutorial by pabloinsente (GitHub)</a></p></li>
+<li><p><a class="reference external" href="https://yenchiah.me/jupyter-book-template/docs/home.html">Jupyter Book Template &amp; Example by yenchiah</a></p></li>
 </ul>
+<hr class="docutils" />
+<p>Feel free to explore the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder for detailed guides and examples in both English and Persian.</p>
 </section>
 </section>
 
@@ -455,7 +486,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-jupyter-book">What is Jupyter Book?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build">Build</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn More</a></li>
 </ul>
   </nav></div>
 

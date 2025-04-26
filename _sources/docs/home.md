@@ -70,3 +70,8 @@
 [چگونه سایت شخصی خود را بسازیم؟ (قسمت اول)](https://aprd.ir/create-your-own-website-part1/)
 
 </div>
+
+## References
+
+```{bibliography}
+```
