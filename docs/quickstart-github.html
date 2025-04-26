@@ -386,10 +386,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-github-repository">2. Create a GitHub Repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">3. Clone the Repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-book-files">4. Copy Book Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-changes">5. Commit and Push Changes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-with-ghp-import">6. Publish with ghp-import</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-your-book-online">7. View Your Book Online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-your-book-after-changes">8. Update Your Book After Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-repository-url-in-configuration">5. Update the Repository URL in Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-changes">6. Commit and Push Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-with-ghp-import">7. Publish with ghp-import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-your-book-online">8. View Your Book Online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-your-book-after-changes">9. Update Your Book After Changes</a></li>
 </ul>
             </nav>
         </div>
@@ -432,8 +433,21 @@ document.write(`
 <li><p>Copy all files and folders (including <code class="docutils literal notranslate"><span class="pre">_build/html</span></code>) from <a class="reference external" href="https://github.com/fum-cs/jupyter-book-tutorial">this Jupyter Book project</a> into the cloned repository folder.</p></li>
 </ul>
 </section>
+<section id="update-the-repository-url-in-configuration">
+<h2>5. Update the Repository URL in Configuration<a class="headerlink" href="#update-the-repository-url-in-configuration" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file in your project.</p></li>
+<li><p>Find the following section:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">repository</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/fum-cs/jupyter-book-tutorial</span><span class="w">  </span><span class="c1"># Online location of your book (change this to your GitHub repository link)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">url</span></code> to match your own GitHub repository address (for example, <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;username&gt;/&lt;repository&gt;</span></code>).</p></li>
+</ul>
+</section>
 <section id="commit-and-push-changes">
-<h2>5. Commit and Push Changes<a class="headerlink" href="#commit-and-push-changes" title="Link to this heading">#</a></h2>
+<h2>6. Commit and Push Changes<a class="headerlink" href="#commit-and-push-changes" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>In GitHub Desktop, you should see the new files listed as changes.</p></li>
 <li><p>Add a summary (e.g., “Add Jupyter Book files”) and click <strong>Commit to main</strong>.</p></li>
@@ -441,7 +455,7 @@ document.write(`
 </ul>
 </section>
 <section id="publish-with-ghp-import">
-<h2>6. Publish with ghp-import<a class="headerlink" href="#publish-with-ghp-import" title="Link to this heading">#</a></h2>
+<h2>7. Publish with ghp-import<a class="headerlink" href="#publish-with-ghp-import" title="Link to this heading">#</a></h2>
 <ul>
 <li><p>Open the Command Prompt in your repository folder.</p></li>
 <li><p>Run the following command to publish your book to GitHub Pages:</p>
@@ -453,7 +467,7 @@ document.write(`
 </ul>
 </section>
 <section id="view-your-book-online">
-<h2>7. View Your Book Online<a class="headerlink" href="#view-your-book-online" title="Link to this heading">#</a></h2>
+<h2>8. View Your Book Online<a class="headerlink" href="#view-your-book-online" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Go to your repository on GitHub.</p></li>
 <li><p>Click <strong>Settings &gt; Pages</strong>.</p></li>
@@ -461,7 +475,7 @@ document.write(`
 </ul>
 </section>
 <section id="update-your-book-after-changes">
-<h2>8. Update Your Book After Changes<a class="headerlink" href="#update-your-book-after-changes" title="Link to this heading">#</a></h2>
+<h2>9. Update Your Book After Changes<a class="headerlink" href="#update-your-book-after-changes" title="Link to this heading">#</a></h2>
 <ul>
 <li><p>If you make any changes to your book content:</p>
 <ol class="arabic">
@@ -479,7 +493,6 @@ document.write(`
 </ol>
 </li>
 </ul>
-<hr class="docutils" />
 </section>
 </section>
 
@@ -551,10 +564,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-github-repository">2. Create a GitHub Repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">3. Clone the Repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copy-book-files">4. Copy Book Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-changes">5. Commit and Push Changes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-with-ghp-import">6. Publish with ghp-import</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-your-book-online">7. View Your Book Online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-your-book-after-changes">8. Update Your Book After Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-repository-url-in-configuration">5. Update the Repository URL in Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-and-push-changes">6. Commit and Push Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-with-ghp-import">7. Publish with ghp-import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-your-book-online">8. View Your Book Online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-your-book-after-changes">9. Update Your Book After Changes</a></li>
 </ul>
   </nav></div>
 
