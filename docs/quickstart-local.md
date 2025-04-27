@@ -1,4 +1,4 @@
-# Quickstart Guide for Local Execution
+# Quickstart Guide 
 
 This guide helps you run Jupyter Book locally on Windows in a few simple steps.
 
