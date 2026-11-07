@@ -175,3 +175,8 @@ cython_debug/
 _build/*/
 __pycache__
 /_build
+.ipynb_checkpoints/
+_sources/
+_build/
+*.pt
+*.pkl
